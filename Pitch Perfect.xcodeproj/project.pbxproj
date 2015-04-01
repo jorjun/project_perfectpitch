@@ -34,7 +34,7 @@
 		530289281AB702A1006106B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5302892A1AB702A1006106B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5302892B1AB702A1006106B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5302892C1AB702A1006106B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5302892C1AB702A1006106B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Pitch Perfect/Info.plist"; sourceTree = "<group>"; };
 		5302892D1AB702A1006106B2 /* RecordSoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSoundController.swift; sourceTree = "<group>"; };
 		5381E61F1AB8D8D300CD8A29 /* PlaySoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundController.swift; sourceTree = "<group>"; };
 		5381E6241AB8E95700CD8A29 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../movie_quote.mp3; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 				5302892D1AB702A1006106B2 /* RecordSoundController.swift */,
 				5381E61F1AB8D8D300CD8A29 /* PlaySoundController.swift */,
 				5302892B1AB702A1006106B2 /* Images.xcassets */,
-				5302892C1AB702A1006106B2 /* Info.plist */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";
@@ -81,6 +80,7 @@
 		53C2F3661AAF608300AA8B1E = {
 			isa = PBXGroup;
 			children = (
+				5302892C1AB702A1006106B2 /* Info.plist */,
 				530289251AB702A1006106B2 /* Pitch Perfect */,
 				53C2F3871AAF608300AA8B1E /* Pitch PerfectTests */,
 				53C2F3701AAF608300AA8B1E /* Products */,

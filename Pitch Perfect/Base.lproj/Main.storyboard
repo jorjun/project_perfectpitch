@@ -26,7 +26,7 @@
                                 <color key="textColor" red="0.20202020202020199" green="0.20202020202020199" blue="0.20202020202020199" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yen-qQ-agh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yen-qQ-agh">
                                 <rect key="frame" x="275" y="462" width="50" height="50"/>
                                 <state key="normal" image="stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,7 +35,7 @@
                                     <action selector="stop_record:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uv4-fu-S9B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vs-14-QLK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vs-14-QLK">
                                 <rect key="frame" x="250" y="189" width="100" height="100"/>
                                 <state key="normal" image="microphone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,12 +47,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="6vs-14-QLK" secondAttribute="centerY" constant="60" id="TmI-OS-ggM"/>
+                            <constraint firstItem="Yen-qQ-agh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3hV-LE-h8s"/>
+                            <constraint firstItem="6vs-14-QLK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="125" id="9HC-30-oNH"/>
+                            <constraint firstItem="gr2-lm-j1m" firstAttribute="top" secondItem="6vs-14-QLK" secondAttribute="bottom" constant="16" id="DYJ-Iq-8hr"/>
+                            <constraint firstItem="6vs-14-QLK" firstAttribute="centerX" secondItem="gr2-lm-j1m" secondAttribute="centerX" id="HUc-ZG-hEj"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Yen-qQ-agh" secondAttribute="bottom" constant="88" id="cwX-tw-kx2"/>
-                            <constraint firstItem="gr2-lm-j1m" firstAttribute="top" secondItem="6vs-14-QLK" secondAttribute="bottom" constant="15" id="g3w-s1-Cco"/>
-                            <constraint firstItem="gr2-lm-j1m" firstAttribute="centerX" secondItem="6vs-14-QLK" secondAttribute="centerX" constant="0.5" id="huL-zF-UdE"/>
-                            <constraint firstAttribute="centerX" secondItem="6vs-14-QLK" secondAttribute="centerX" id="pbB-Zf-ioc"/>
-                            <constraint firstItem="Yen-qQ-agh" firstAttribute="centerX" secondItem="6vs-14-QLK" secondAttribute="centerX" constant="2" id="syp-Ag-JyV"/>
+                            <constraint firstItem="gr2-lm-j1m" firstAttribute="centerX" secondItem="Yen-qQ-agh" secondAttribute="centerX" id="tBb-4I-VQB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tXH-sP-QeU"/>
@@ -97,7 +97,7 @@
                                     <action selector="playFastButton:" destination="5B4-Zw-AFO" eventType="touchUpInside" id="vNp-WM-00J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2X-Fo-tJf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2X-Fo-tJf">
                                 <rect key="frame" x="275" y="486" width="50" height="50"/>
                                 <state key="normal" image="stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,16 +128,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2Nz-PJ-It7" firstAttribute="top" secondItem="Cnq-XC-6Uh" secondAttribute="bottom" constant="49" id="1ra-uF-l3k"/>
-                            <constraint firstAttribute="centerX" secondItem="V2X-Fo-tJf" secondAttribute="centerX" id="36s-3g-mgp"/>
                             <constraint firstItem="2Nz-PJ-It7" firstAttribute="centerX" secondItem="dJ9-fb-8pd" secondAttribute="centerX" id="A4X-Bv-xSt"/>
+                            <constraint firstItem="JZc-28-fNn" firstAttribute="top" secondItem="V2X-Fo-tJf" secondAttribute="bottom" constant="64" id="Fn5-IO-lR4"/>
                             <constraint firstItem="gIu-6W-xdO" firstAttribute="top" secondItem="dJ9-fb-8pd" secondAttribute="top" id="GCZ-1w-dnv"/>
                             <constraint firstItem="gIu-6W-xdO" firstAttribute="leading" secondItem="afa-q0-zet" secondAttribute="leading" id="Hpv-7r-R6Z"/>
+                            <constraint firstItem="V2X-Fo-tJf" firstAttribute="centerX" secondItem="hfe-V6-ldu" secondAttribute="centerX" id="NdK-9j-Xf6"/>
                             <constraint firstAttribute="centerY" secondItem="dJ9-fb-8pd" secondAttribute="centerY" id="Tjr-J9-HD5"/>
-                            <constraint firstAttribute="centerY" secondItem="V2X-Fo-tJf" secondAttribute="centerY" constant="-211" id="bdM-dT-ROr"/>
                             <constraint firstItem="2Nz-PJ-It7" firstAttribute="leading" secondItem="hfe-V6-ldu" secondAttribute="leadingMargin" constant="26" id="dSd-7x-Kro"/>
                             <constraint firstItem="dJ9-fb-8pd" firstAttribute="leading" secondItem="hfe-V6-ldu" secondAttribute="leadingMargin" constant="26" id="jhD-Sd-uPF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="afa-q0-zet" secondAttribute="trailing" constant="27" id="kMt-fK-tup"/>
-                            <constraint firstItem="JZc-28-fNn" firstAttribute="top" secondItem="V2X-Fo-tJf" secondAttribute="bottom" constant="80" id="oB6-5U-oC3"/>
                             <constraint firstItem="afa-q0-zet" firstAttribute="top" secondItem="Cnq-XC-6Uh" secondAttribute="bottom" constant="49" id="rAC-Z1-p98"/>
                         </constraints>
                     </view>

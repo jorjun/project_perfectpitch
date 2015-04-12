@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5302892E1AB702A1006106B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530289261AB702A1006106B2 /* AppDelegate.swift */; };
 		5302892F1AB702A1006106B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530289271AB702A1006106B2 /* LaunchScreen.xib */; };
 		530289301AB702A1006106B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530289291AB702A1006106B2 /* Main.storyboard */; };
 		530289311AB702A1006106B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5302892B1AB702A1006106B2 /* Images.xcassets */; };
-		530289321AB702A1006106B2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5302892C1AB702A1006106B2 /* Info.plist */; };
 		530289331AB702A1006106B2 /* RecordSoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302892D1AB702A1006106B2 /* RecordSoundController.swift */; };
+		5336F3DB1ADAA92500698EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336F3DA1ADAA92500698EE9 /* AppDelegate.swift */; };
 		5381E6201AB8D8D300CD8A29 /* PlaySoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381E61F1AB8D8D300CD8A29 /* PlaySoundController.swift */; };
 		5381E6251AB8E95700CD8A29 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5381E6241AB8E95700CD8A29 /* movie_quote.mp3 */; };
 		5387AF811ACA9CD2007F0C09 /* recorded_audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5387AF801ACA9CD2007F0C09 /* recorded_audio.swift */; };
@@ -30,12 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		530289261AB702A1006106B2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		530289281AB702A1006106B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5302892A1AB702A1006106B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5302892B1AB702A1006106B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5302892C1AB702A1006106B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Pitch Perfect/Info.plist"; sourceTree = "<group>"; };
 		5302892D1AB702A1006106B2 /* RecordSoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSoundController.swift; sourceTree = "<group>"; };
+		5336F3DA1ADAA92500698EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5381E61F1AB8D8D300CD8A29 /* PlaySoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundController.swift; sourceTree = "<group>"; };
 		5381E6241AB8E95700CD8A29 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../movie_quote.mp3; sourceTree = "<group>"; };
 		5387AF801ACA9CD2007F0C09 /* recorded_audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recorded_audio.swift; sourceTree = "<group>"; };
@@ -66,8 +65,8 @@
 		530289251AB702A1006106B2 /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
-				530289261AB702A1006106B2 /* AppDelegate.swift */,
 				530289271AB702A1006106B2 /* LaunchScreen.xib */,
+				5336F3DA1ADAA92500698EE9 /* AppDelegate.swift */,
 				5387AF801ACA9CD2007F0C09 /* recorded_audio.swift */,
 				530289291AB702A1006106B2 /* Main.storyboard */,
 				5302892D1AB702A1006106B2 /* RecordSoundController.swift */,
@@ -158,7 +157,7 @@
 		53C2F3671AAF608300AA8B1E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "jorjun technical services";
 				TargetAttributes = {
 					53C2F36E1AAF608300AA8B1E = {
@@ -198,7 +197,6 @@
 				530289301AB702A1006106B2 /* Main.storyboard in Resources */,
 				5381E6251AB8E95700CD8A29 /* movie_quote.mp3 in Resources */,
 				530289311AB702A1006106B2 /* Images.xcassets in Resources */,
-				530289321AB702A1006106B2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5336F3DB1ADAA92500698EE9 /* AppDelegate.swift in Sources */,
 				5387AF811ACA9CD2007F0C09 /* recorded_audio.swift in Sources */,
-				5302892E1AB702A1006106B2 /* AppDelegate.swift in Sources */,
 				530289331AB702A1006106B2 /* RecordSoundController.swift in Sources */,
 				5381E6201AB8D8D300CD8A29 /* PlaySoundController.swift in Sources */,
 			);

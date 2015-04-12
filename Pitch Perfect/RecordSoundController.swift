@@ -19,10 +19,10 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
 
     
     @IBAction func do_audio_record(sender: UIButton) {
-        recording_in_progress.hidden = false
+        recording_in_progress.text = "Recording in progress..."
         stop_recording_button.hidden = false
 
-        let dir_path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let dir_path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         var current_time = NSDate()
         var formatter = NSDateFormatter()
         formatter.dateFormat = "ddMMyyy-HHmmss"
@@ -42,17 +42,15 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "stop_recording" {
             println("prepareForSegue")
-            let vc_play_sound = segue.destinationViewController as PlaySoundsController
-            let data = sender as RecordedAudio
+            let vc_play_sound = segue.destinationViewController as! PlaySoundsController
+            let data = sender as! RecordedAudio
             vc_play_sound.received_audio = data
         }
     }
 
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
         if flag {
-            recorded_audio = RecordedAudio()
-            recorded_audio.file_path_url = recorder.url  // file path
-            recorded_audio.title = recorder.url.lastPathComponent // file base name
+            recorded_audio = RecordedAudio(title: recorder.url.lastPathComponent!, file_path_url:recorder.url!)
             println("Stopped recording")
             self.performSegueWithIdentifier("stop_recording", sender: recorded_audio)
             
@@ -63,7 +61,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stop_record(sender: UIButton) {
-        recording_in_progress.hidden = true
         stop_recording_button.hidden = true
         av_recorder.stop()
         var session = AVAudioSession.sharedInstance()
@@ -72,6 +69,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+        recording_in_progress.text = "Tap to record"
         stop_recording_button.hidden = true
     }
     

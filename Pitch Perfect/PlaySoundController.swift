@@ -32,6 +32,7 @@ class PlaySoundsController: UIViewController {
 
     func play_audio(rate: Float) {
         av_player.stop()
+        audio_engine.reset()
         av_player.currentTime = 0
         av_player.rate = rate
         av_player.play()
@@ -46,11 +47,21 @@ class PlaySoundsController: UIViewController {
         self.play_audio(2)
     }
     
+    @IBAction func playDarthAudio(sender: UIButton) {
+        self.play_audio_varying_pitch(-1000)
+        
+    }
+    
+    @IBAction func playChipmunk(sender: UIButton) {
+        self.play_audio_varying_pitch(1000)
+    }
+
     @IBAction func stopButton(sender: UIButton) {
         av_player.stop()
     }
 
     func play_audio_varying_pitch(pitch: Float) {
+        av_player.stop()
         audio_engine.stop()
         audio_engine.reset()
 
@@ -70,15 +81,6 @@ class PlaySoundsController: UIViewController {
         audio_engine.startAndReturnError(nil)
         
         pitch_player.play()
-    }
-
-    @IBAction func playDarthAudio(sender: UIButton) {
-        self.play_audio_varying_pitch(-1000)
-        
-    }
-    
-    @IBAction func playChipmunk(sender: UIButton) {
-        self.play_audio_varying_pitch(1000)
     }
     
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D127a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Krs-qh-t7Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Krs-qh-t7Y">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,7 @@
                             <userLayoutGuide location="244" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr2-lm-j1m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr2-lm-j1m">
                                 <rect key="frame" x="263" y="305" width="75" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="0.20202020202020199" green="0.20202020202020199" blue="0.20202020202020199" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,7 +58,7 @@
                     <navigationItem key="navigationItem" id="tXH-sP-QeU"/>
                     <connections>
                         <outlet property="record_button" destination="6vs-14-QLK" id="a6c-y6-wGG"/>
-                        <outlet property="recording_in_progress" destination="gr2-lm-j1m" id="YN9-CU-34q"/>
+                        <outlet property="recording_in_progress" destination="gr2-lm-j1m" id="9yk-6Y-pk9"/>
                         <outlet property="stop_recording_button" destination="Yen-qQ-agh" id="4n5-4t-sHT"/>
                         <segue destination="5B4-Zw-AFO" kind="show" identifier="stop_recording" id="Sjp-fV-UCE"/>
                     </connections>
